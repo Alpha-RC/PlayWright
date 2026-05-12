@@ -5,10 +5,10 @@
    
 */
 
-var if = 10; 
+var if = 10;
 
-// Here if cannot be an identifier because it is a reserved keyword in JavaScript. 
-// This will result in a syntax error because 'if' is used for conditional statements 
+// Here if cannot be an identifier because it is a reserved keyword in JavaScript.
+// This will result in a syntax error because 'if' is used for conditional statements
 
 
 // JavaScript Reserved Keywords:

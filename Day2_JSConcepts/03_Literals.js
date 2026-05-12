@@ -1,6 +1,6 @@
 // Literals in JavaScript:
 
-// 1. A literal is a fixed value that is directly written in the code.
+// A literal is a fixed value that is directly written in the code.
 // For example:
 var myString = "Hello, World!";
 // Here, "Hello, World!" is a string literal.
