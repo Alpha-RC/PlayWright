@@ -11,7 +11,7 @@ myVariable = 20; // Reassignment is allowed
 console.log("Value of myVariable after reassignment:", myVariable); // Output: Value of myVariable after reassignment: 20
 
 // Redeclaration in the same scope is not allowed and will cause an error
-let myVariable = 30; // This would cause an error: Uncaught SyntaxError: Identifier 'myVariable' has already been declared
+// let myVariable = 30; // This would cause an error: Uncaught SyntaxError: Identifier 'myVariable' has already been declared
 
 //************************************************************************************************************************
 
@@ -29,7 +29,7 @@ if (true)
 }
 
 // Trying to access blockScopedVariable outside the block will result in an error
-console.log(blockScopedVariable); // This would cause an error: Uncaught ReferenceError: blockScopedVariable is not defined
+// console.log(blockScopedVariable); // This would cause an error: Uncaught ReferenceError: blockScopedVariable is not defined
 
 // e.g. 2:
 for (let i = 0; i < 3; i++)
@@ -38,7 +38,7 @@ for (let i = 0; i < 3; i++)
 }  
 
 // Trying to access 'i' outside the loop will result in an error because 'i' is block-scoped to the loop
-console.log("Outside loop, i:", i); // This would cause an error: Uncaught ReferenceError: i is not defined
+// console.log("Outside loop, i:", i); // This would cause an error: Uncaught ReferenceError: i is not defined
 
 //e.g. 3:
 function testFunction()
@@ -50,7 +50,34 @@ function testFunction()
 testFunction(); // Calling the function to see the output
 
 // Trying to access localVariable outside the function will result in an error because 'localVariable' is block-scoped to the function
-console.log(localVariable); // This would cause an error: Uncaught ReferenceError: localVariable is not defined
+// console.log(localVariable); // This would cause an error: Uncaught ReferenceError: localVariable is not defined
+
+// e.g. 4:
+
+let b=10; // global scope
+console.log(b);
+
+function printHello()
+{
+    console.log("Hello");
+    let b =20; // local scope
+    console.log(b);
+
+    if(true)
+    {
+        let b = 30; // block scope
+        console.log(b);
+    }   
+
+    console.log(b); // This will print 20, as the block-scoped variable 'b' inside the if statement does not 
+                    // affect the 'b' in the function scope
+}
+
+console.log("Global scope-->" + b); // This will print 10, as the global variable 'b' is not affected by the 
+                                    // local variable 'b' in the function
+
+printHello(); // Calling the function to see the output
+
 
 //************************************************************************************************************************
 
@@ -59,7 +86,7 @@ console.log(localVariable); // This would cause an error: Uncaught ReferenceErro
 // Variables declared with let are hoisted to the top of their block, but they are not initialized. 
 // This means that if you try to access a let variable before its declaration, it will result in a ReferenceError.
 
-console.log("Value of hoisted variable:", hoistedLet); // This would cause an error: Uncaught ReferenceError: Cannot access 'hoistedLet' before initialization
+// console.log("Value of hoisted variable:", hoistedLet); // This would cause an error: Uncaught ReferenceError: Cannot access 'hoistedLet' before initialization
 
 let hoistedLet = "I am hoisted!"; // Declaration and initialization of the variable
 
