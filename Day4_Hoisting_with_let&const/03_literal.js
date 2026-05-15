@@ -29,36 +29,79 @@ let pi = 3.14;         // This is a numeric literanl assigned to variable 'pi'
 let nullValue = null   // This is a null literal assigned to varible 'nullValue'
 let undefinedValue     // This varibale is declared but not assigned, so it has a value 'undefined'
 
-// Diff between null and undefined
+//-----------------------------------------------------------------------------------------------------------------------------------
 
-// Undefined: A varibale exists, but is has not been assigned with any value yet. javascripts itself sets this automatically
+console.log( 
 
-//null: A variable exists, but the developer explicitly assign "no value" or "empty value"
-//      It is intentional absence of any value
+    "Diff between null and undefined\n\n"+
+    "Undefined:\n"+
+    "A varibale exists, but is has not been assigned with any value yet. javascripts itself sets this automatically\n\n"+
+    "null:\n"+ 
+    "A variable exists, but the developer explicitly assign no value or empty value It is intentional absence of any value\n"
+);
 
-//----------------------------------
-// 1. undefined                     |
-//----------------------------------
+console.log(
+
+" ---------------------------------\n"+
+"|        1. undefined             |\n"+
+" ---------------------------------\n"
+
+);
 
 let userName                    // Declared but not assigned
 console.log(userName);          // undefined
-console.log(typeof userName);   // "undefined"
+console.log("Data type of varibale 'username' is: " + typeof userName);   // "undefined"
 
-function greet(){
+function greet()
+{
     // no return statement
 }
 
 console.log(greet());           // "undefined"
 
-let person = {name: "Alice"};
-console.log(person.age);        // undefined (property does not exists)
 
-let fruits = ["Apple" , "Bannana"];
-console.log(fruits[5]);         // undefined (index out of range)
-
+//-----------------------------------------------------------------------------------------------------------------------------------
 
 //----------------------------------
 // 1. null                          |
 //----------------------------------
 
-let profilePicture = null;
+let profilePicture = null; // developer explicitly assigned null value
+console.log(profilePicture); //output: null
+console.log("Data type of varibale 'profilePicture' is: " + typeof profilePicture);  // "Object" <--Known JS quirk!
+
+
+let score = 100;
+score = null; //developer clear the value of 'score' intentionally
+console.log(score);
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
+// Key Differences:
+
+// --------------------------------------------------------
+// 3. Key Differences (Summary Table)
+// --------------------------------------------------------
+
+/*
+  | Feature              | undefined                     | null                           |
+  |----------------------|-------------------------------|--------------------------------|
+  | Meaning              | Not assigned yet              | Intentionally empty            |
+  | Who sets it?         | JavaScript automatically      | Developer manually             |
+  | Type                 | undefined                     | object (historical bug in JS)  |
+  | == comparison        | null == undefined  -> true    |                                |
+  | === comparison       | null === undefined -> false   |                                |
+*/
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
+// typeof - tells the data type of variable
+
+let userName1 = "Rohit";
+console.log(typeof userName1); // Output: String
+
+console.log(typeof name);           // String
+console.log(typeof isStudent);      // Boolean 
+console.log(typeof pi);             // Numeric
+console.log(typeof nullValue);      // object <-- Historical bug in JS
+console.log(typeof undefinedValue); // undefined
