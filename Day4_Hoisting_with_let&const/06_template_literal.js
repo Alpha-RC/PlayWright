@@ -23,4 +23,4 @@ const payload = `{
 
 console.log("payload: " + payload);
 
-//${varibale_name}  - this is called a template literal
+//${varibale_name}  - this is called a template
