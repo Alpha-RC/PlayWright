@@ -105,3 +105,6 @@ console.log(typeof isStudent);      // Boolean
 console.log(typeof pi);             // Numeric
 console.log(typeof nullValue);      // object <-- Historical bug in JS
 console.log(typeof undefinedValue); // undefined
+
+
+
