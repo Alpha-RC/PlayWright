@@ -61,11 +61,22 @@ console.log(f++ + ++f); // Here at f++ value will be considered as original valu
                         // now value of 'f' become 11
                         // after addition ++f means pre-increment so value of 'f' will become 12 
                         // now calculation becomes: 10 + 12: 22
+console.log(f);
 
 
 let g = 10;
 console.log(++g + ++g); //output: 23
 // expression/calculation: 11 + 12
 
-// 11 is because its pre-increment so it will be 11 after addition agian it is pre-increment then it will again increated the value
-// and then assign
+// 11 is because its pre-increment so it will be 11 after addition, again it is pre-increment then it will again incresed the value to 12
+console.log(g);
+
+//==========================================================================================================================================
+
+// 2. decrement:
+
+
+let h = 5; 
+console.log(h++ + ++h - --h + h-- + ++h); 
+console.log(5   +   7 -   6 + 6   + 6  );
+console.log(h);
