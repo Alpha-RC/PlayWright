@@ -78,5 +78,7 @@ console.log(g);
 
 let h = 5; 
 console.log(h++ + ++h - --h + h-- + ++h); 
-console.log(5   +   7 -   6 + 6   + 6  );
 console.log(h);
+
+// solution:
+console.log(5   +   7 -   6 + 6   + 6  );
