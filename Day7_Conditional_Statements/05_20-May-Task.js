@@ -155,17 +155,19 @@ Input: attempts = 0
 Output: Login successful
 */
 
-let attempts = 2; 
+let attempts = 2;
 
 if (attempts === 0) {
 
     console.log("Login successful");
 
-} else if (attempts === 3) {
+} 
+else if (attempts === 3) {
 
     console.log("🔒 Account Locked — Contact support");
 
-} else {
+} 
+else {
 
     let attemptsLeft = 3 - attempts;
 
