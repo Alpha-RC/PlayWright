@@ -1,4 +1,4 @@
-// creating arrays
+// Array creation methods
 
 //========================================================================================================================================
 
@@ -11,7 +11,8 @@ console.log(browsers); //output: [ 'Chnrome', 'Firefix', 'Safari' ]
 
 // 2. Using Array constructor new Array(number of items/values):
 
-let scores = new Array(3);  // Array(3) is Array constructor, this will create a empty array but size of array is fixed here i.e.3
+let scores = new Array(3);  // Array(3) is Array constructor, this will create a empty array but size of array is fixed here i.e.3 but can add
+                            // more values at next index
 
 console.log(scores); // output: [ <3 empty items> ]
 

@@ -1,22 +1,22 @@
 // Accessing & Modifying Arrays:
 
-let statuses = ["pass" , "fail" , "skip"];
+let status = ["pass" , "fail" , "skip"];
 
 // Accessing by indexes:
 
 // 1. by using variableName[index]
-console.log(statuses[0]); // output: pass
-console.log(statuses[1]); // output: fail
-console.log(statuses[2]); // output: skip
-console.log(statuses[3]); // output: undefined
+console.log(status[0]); // output: pass
+console.log(status[1]); // output: fail
+console.log(status[2]); // output: skip
+console.log(status[3]); // output: undefined
 
 console.log();
 
 // using variableName.at(index) method
-console.log(statuses.at(-1)); // output: skip
-console.log(statuses.at(-2)); // output: fail
-console.log(statuses.at(-3)); // output: pass
-console.log(statuses.at(-4)); // output: undefined
+console.log(status.at(-1)); // output: skip
+console.log(status.at(-2)); // output: fail
+console.log(status.at(-3)); // output: pass
+console.log(status.at(-4)); // output: undefined
 
 
 // Modifing Values
