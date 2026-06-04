@@ -8,7 +8,7 @@ const greet1 = function(name1){
 let r = greet1("Rohit");
 console.log(r); // output: hello Rohit!
 
-// now arrow function is like the sort version of above function with different syntax
+// now arrow function is like the short version of above function with different syntax
 
 //  arrow function e.g:
 const greet2 = (name1) => `Hello ${name1}`;
@@ -34,6 +34,19 @@ printIt("Pramod"); // output: Hello Pramod!!!
 
 // e.g 3: 
 const print1 = ()=> console.log("Printing in console"); // this function is not asking for any parameter but just printing the log in
-                                                        // console.
-//calling the function:                                                        
+                                                        // console.                                                        
 print1(); // output: Printing in console
+
+// e.g 4:
+
+//  if we have multiple lines for a function then we need to use curly braces and also need to use return keyword if function has to
+// return something
+
+const greet3 = name => {
+    const msg = 'Hi ' + name;
+    return msg;
+}
+
+console.log(greet3("Rohit")); // instead of storing we can print the return value // output: Hi Rohit
+
+
