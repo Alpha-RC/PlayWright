@@ -1,22 +1,24 @@
-let str = "Welcome";
+//reverse string:
 
+let str = "Welcome";
 let reverse = "";
 
 for (let i = str.length-1;i>=0;i--) 
 { 
      reverse += str.charAt(i); 
 }
-console.log(reverse); // outout: emocleW
+console.log(`Reverse of ${str}: ${reverse}`); // outout: Reverse of Welcome: emocleW
 
-let str2 = "oo";
-let isPalindrome = "";
-for (let i = str2.length -1; i >= 0 ; i--) {
-    
-    isPalindrome += str2.charAt(i);
-    
+// Palindrome
+let str2 = String("madam").toLowerCase();
+let palindrome = "";
+
+for (let i = str2.length -1; i >= 0 ; i--) 
+{
+    palindrome += str2.charAt(i);   
 }
 
-if(isPalindrome === str2){
+if(palindrome === str2){
     console.log(`${str2} is palindrome`);
 }
 else{
