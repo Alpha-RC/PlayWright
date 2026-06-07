@@ -1,6 +1,6 @@
 //--------------------------------------------------------------------------------------------------------------------------------------
 
-// 1. Basic function: no argument & no return
+// 1. Basic function: no parameters & no return
 
 function basicFunction(){
     console.log("This is basic function which returns nothing and no arguments reqquired");
