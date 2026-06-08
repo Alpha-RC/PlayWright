@@ -16,14 +16,13 @@ for (let i = n; i > 0; i--)
     console.log();
 }
 
-
-//   *  
+//   *
 //  ***
-// *****
+// ***** 
 
 let rows = 3;
 
-for (let i = 1; i <= rows; i++) 
+for (let i = 1; i <= rows; i++)
 {
     // Print spaces
     for (let j = 1; j <= rows - i; j++) {
