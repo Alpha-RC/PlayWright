@@ -1,8 +1,6 @@
 let apiCall = new Promise( function (resolve , reject){
 
-    resolve({
-        status: 200 , body: "User data"
-    })
+    resolve({ status: 200 , body: "User data"});
 
 });
 
