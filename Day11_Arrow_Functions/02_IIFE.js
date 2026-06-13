@@ -8,7 +8,9 @@
 
 
 // we can invoke the arrow function as well:
-( ()=> console.log("This is arrow function"))();  
-
-
+   ( ()=> console.log("This is arrow function") )();
+// |____________________________________________| |
+//                        |                       |
+//  assume this is a function name and            this is calling that function
+                                 
 // these functions are not reusable function and they dont need to called separately as they will be invoked at runtime
