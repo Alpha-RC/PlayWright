@@ -2,15 +2,14 @@ let a = 10;
 console.log("Value of a is: " + a);
 // Above code dosen't need optimization
 
-// Below code needs to be optimized as it is printing 10000 lines in the console 
-// which is not good for performance, so we can optimize it by printing only the 
-// first 10 lines and then print a message that there are more lines to print.
-
 function print()
 {
     console.log("Hello");
 }
 
+// Below code needs to be optimized as it is printing 10000 lines in the console 
+// which is not good for performance, so we can optimize it by printing only the 
+// first 10 lines and then print a message that there are more lines to print.
 
 for (let i = 0; i < 10000; i++) 
 {
@@ -18,8 +17,7 @@ for (let i = 0; i < 10000; i++)
     print();
 }
 
-// Above code is called as "Hot Code" as it is executing a lot of lines of code 
-// in a loop, which is not good for performance.
+// Above code is called as "Hot Code" as it is executing a lot of lines of code  in a loop, which is not good for performance.
 
 // Here javascript engine will optimize the code by using "Just In Time Compilation" (JIT)
 // which will compile the code at runtime and execute it, which will improve the performance of the code.
