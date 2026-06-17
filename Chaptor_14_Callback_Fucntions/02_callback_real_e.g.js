@@ -7,15 +7,13 @@ function cafe(item, callWhenTableIsReady){
     callWhenTableIsReady();
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------
-
-// first way to send function as argument:
 function callWhenTableisReady() {
     
     console.log("calling 9876543210");
 
 }
 
+// first way to send function as argument:
 cafe("Burger", callWhenTableisReady);
 
 //-------------------------------------------------------------------------------------------------------------------------------

@@ -9,7 +9,7 @@
 // enterCredentials
 // clickLogin
 
-// now we will written a functions for above stesp to perform
+// now we will written a functions for above steps to perform
 
 
 // 1. openBrowser: 
@@ -72,15 +72,15 @@ function clickLogin1(callback){
 // below is how we will call these functions:
 
 // THIS IS CALLBACK HELL 👇
-// openBrowser1(function () {    // --> here we are calling our first function openBrowser1 and passing a function as a argument for callBack parameter
-//     goToLoginPage1(function () {
-//         enterCredentials1(function () {
-//             clickLogin1(function () {
-//                 console.log("Test Complete!");
-//             });
-//         });
-//     });
-// });
+openBrowser1(function () {    // --> here we are calling our first function openBrowser1 and passing a function as a argument for callBack parameter
+    goToLoginPage1(function () {
+        enterCredentials1(function () {
+            clickLogin1(function () {
+                console.log("Test Complete!");
+            });
+        });
+    });
+});
 
 
 // It is called as callBack hell due to below reasons:
@@ -127,7 +127,8 @@ function openBrowser(){
 function goToLoginPage(){
 
     // code to navigate to login page will be here.
-    // now based upon result of execution of above line, whether login page is loaded or not, we will resolve or reject this goToLoginPage() function
+    // now based upon result of execution of above line, whether login page is loaded or not, we will resolve or reject this goToLoginPage() 
+    // function
     // using the new Promise() object like below
     return new Promise( resolve => resolve("login page loaded"));
 }
@@ -141,10 +142,13 @@ function enterCredentials(){
 }
 
 function clickLogin(){
+    
     //code to click on login button
 
     return new Promise( resolve => resolve("Login button clicked"));
 }
+
+
 function isHomePage(){
     
     // code to check if home page is loaded after login button click
@@ -153,23 +157,22 @@ function isHomePage(){
 }
 
 
-//  now in order to call these function which are returning promises we need to use the function called then and catch and finally
+//  now in order to call these function which are returning promises we need to use the .then and .catch and .finally functions/methods
 
 // starting with openBrowser
-openBrowser().then(function () {
-    return goToLoginPage();
-});
+// openBrowser().then(function () {
+//     return goToLoginPage();
+// });
 
-
-// in above function openBroser calling we applied .then method
+// in above code while calling openbrowser() we applied .then method
 // .then means when openBrowser() returns a resolve status of the function then only execute the function which is under .then
 
 // function under .then is basically returning the next step which should be performed 
 
 // in this case it is returning the goToLoginPage function
 
-//  now goToLoginPage function is also returing the promise then we need to apply .then function on .then function which is applied on openBrowser
-// function while calling
+// now goToLoginPage function is also returing the promise then we need to apply .then function on .then function which is applied on 
+// openBrowser function while calling
 
 // so hierarchy will look like:
 
@@ -208,5 +211,3 @@ openBrowser().then( msg => {
         console.log(msg);
         return isHomePage();
     }).then( msg => console.log(msg) ).catch( error => console.log(error) ).finally( ()=> console.log("Test Finished"));
-
-   

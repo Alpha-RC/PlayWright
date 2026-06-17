@@ -1,9 +1,9 @@
+
 console.log("Test 1: Started");
 
-setTimeout( function(){
+setTimeout( function() {
     console.log("Test 2: API response reveived");
 } , 2000);
-
 
 // Here we are calling a predefined function in JS i.e. setTimeout() which require 2 parameters
 // first is a function and second is miliseconds(number)
@@ -17,7 +17,6 @@ setTimeout( ()=> console.log("Test 3: Response is 200 OK") , 3000);
 
 console.log("Test 3: Moving to next test");
 
-
 /*
 
 output of above code will be like:
@@ -29,7 +28,7 @@ Test 3: Response is 200 OK
 
 here console.log statement got executed first and then the other 2 setTimeout fuctions
 
-this is called asynchronous execution/concept - means when code execution started then it will wair for those 2 setTimeout calls
-and it will immediatley move to the next line to execute so thats why console.los statements got executed first
+this is called asynchronous execution/concept - means when code execution started then it will wait for those 2 setTimeout calls
+and it will immediatley move to the next line to execute so thats why console.log statements got executed first
 
 */

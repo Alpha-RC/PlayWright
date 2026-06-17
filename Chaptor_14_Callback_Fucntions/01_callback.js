@@ -1,15 +1,13 @@
 // suppose we hae below function which places an order
 
-function placeOrder(orderItem, isOrderPlaced){
+function placeOrder(orderItem, isOrderPlaced){     // isOrderPlaced is nothing but a callBack function
 
     console.log(`your order is: ${orderItem}`);
     
-    isOrderPlaced();// so here we re calling back another function which is stored in callback parameters of this function
+    isOrderPlaced();// so here we are calling back another function which is stored in isOrderPlaced parameters of this function
                     // so when placeOrder function gets called it needs 2 parameters one is 'item' where any data can be stored 
                     // and another is 'isOrderPlaced' which will store a function
 }
-
-//-------------------------------------------------------------------------------------------------------------------------------
 
 // First way of callback
 

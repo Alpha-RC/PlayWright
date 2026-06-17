@@ -24,9 +24,11 @@ let cacheChecker = Promise.resolve( "Cache OK");
 
 // all method of Promise require an array of promises and returns a new promise where we can apply .then and check the result
 
-Promise.all([authChecker,dbChecker,cacheChecker] ).then(function(results){
+Promise.all( [authChecker, dbChecker, cacheChecker] ).then(function(results){
     console.log(results); // output: [ 'Auth OK', 'DB OK', 'Cache OK' ]
 });
+
+// "Promise.all( [authChecker, dbChecker, cacheChecker] )" this will returns all the values returned by resolved promise into single array
 
 // in above example as all promises are resolved we will not get any error and .then block will execute but what if there is a rejection?
 
@@ -40,12 +42,14 @@ Promise.all([authChecker,dbChecker,cacheChecker] ).then(function(results){
 
 Promise.all([ 
     Promise.resolve("Auth OK"), 
-    Promise.reject("DB Down"), 
-    Promise.reject("Caches Broken")
+    Promise.resolve("DB OK"), 
+    Promise.resolve("Caches OK")
 ]).then( arrayOfResolvedPromises => console.log(arrayOfResolvedPromises) ).catch(firstRejectedPromise => console.log(firstRejectedPromise));
 
 // in above case .then will only run when all the promises in array are resolved, even one is rejected then .catch will execute and whenever there is
 // rejected promise we must handle it with .cacth()
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 //  ****************************
@@ -54,6 +58,7 @@ Promise.all([
 //  |                          |
 //  **************************** 
 
+// note: allSettled() method will send the info of the promises in the form of object to .then function
 
 Promise.allSettled([
     Promise.resolve("Test A Passed!"),
@@ -73,6 +78,7 @@ Test 2: rejected - Test B Failed
 Test 3: fulfilled - Test C Passed
 */
 
+// if we print the value .then function will get:
 
 Promise.allSettled([
     Promise.resolve("Test A Passed!"),

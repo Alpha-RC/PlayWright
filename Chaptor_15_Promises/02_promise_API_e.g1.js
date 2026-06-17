@@ -8,5 +8,6 @@ apiCall.then( function (response){
     console.log(response.status);
 });
 
-// .then() runs only when promise is resolved successfully
+// .then() runs only when promise is resolved successfully, it will have one function as a arugument which will catch the value 
+// being passed by resolve in promise
 
