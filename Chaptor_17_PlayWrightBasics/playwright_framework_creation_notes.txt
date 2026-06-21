@@ -1,0 +1,106 @@
+Playwright Framework Setup Notes
+
+1.  Initialize npm project
+
+Command: npm init -y
+
+-   npm = Node Package Manager
+-   init = Initialize a Node project
+-   -y = Accept default values automatically
+
+Creates: - package.json
+
+------------------------------------------------------------------------
+
+2.  Install Playwright Library
+
+Command: npm install playwright
+
+What it does: - Installs Playwright package. - Creates node_modules
+folder. - Creates package-lock.json. - Updates package.json.
+
+------------------------------------------------------------------------
+
+3.  Update to Latest Playwright Version
+
+Command: npm install playwright@latest
+
+What it does: - Installs the newest Playwright version. - Updates
+package.json.
+
+------------------------------------------------------------------------
+
+4.  Install Browsers
+
+Command: npx playwright install
+
+What it does: - Downloads Chromium. - Downloads Firefox. - Downloads
+WebKit.
+
+Browsers are stored in Playwright cache and shared between projects.
+
+------------------------------------------------------------------------
+
+5.  Install Playwright Test Runner
+
+Command: npm install -D @playwright/test
+
+-   -D = Development dependency.
+
+Provides: - test() - expect() - Fixtures - Reports - Parallel execution
+
+------------------------------------------------------------------------
+
+6.  Create a Complete Playwright Framework
+
+Command: npm init playwright@latest
+
+What it does: - Creates npm project. - Installs Playwright. - Installs
+@playwright/test. - Downloads browsers. - Creates tests folder. -
+Creates playwright.config.ts. - Creates example tests.
+
+------------------------------------------------------------------------
+
+Typical Manual Setup:
+
+mkdir PlaywrightProject cd PlaywrightProject
+
+npm init -y npm install playwright npm install -D @playwright/test npx
+playwright install
+
+------------------------------------------------------------------------
+
+Automatic Setup:
+
+mkdir PlaywrightProject cd PlaywrightProject
+
+npm init playwright@latest
+
+------------------------------------------------------------------------
+
+Useful Commands:
+
+npx playwright test Runs all tests.
+
+npx playwright test login.spec.ts Runs a specific test.
+
+npx playwright test –headed Runs tests in headed mode.
+
+npx playwright show-report Opens HTML report.
+
+------------------------------------------------------------------------
+
+Standard Framework Structure:
+
+PlaywrightProject 
+    | 
+    |– node_modules 
+    |– tests 
+    |   |– login.spec.ts 
+    |   |–checkout.spec.ts 
+    |– playwright.config.ts 
+    |– package.json 
+    |– package-lock.json 
+    |– test-results
+    
+------------------------------------------------------------------------
