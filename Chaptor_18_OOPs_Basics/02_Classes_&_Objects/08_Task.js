@@ -1,4 +1,4 @@
-/*
+
 class Calculator{
 
     constructor(num1 , num2){
@@ -35,7 +35,7 @@ obj.substraction();         //  Substraction: 10
 obj.division();             //  Division: 2
 obj.multiplication();       //  Multiplication: 200
 obj.modulus();              //  Modulus: 0
-*/
+
 //----------------------------------------------------------------------------------------------------------------------------
 
 class Student{
