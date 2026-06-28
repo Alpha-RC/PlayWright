@@ -30,4 +30,10 @@ Tesla.drive();  // output: I'm driving: Model S
 
 
 const i10 = new Car("grand i10");
-i10.drive();    // output: I'm driving: grand i10
+i10.drive();    // output: I'm driving: grand 
+
+console.log( Tesla.name );  // this.name creates a varibale for class as this represent a object reference of its own class it is 
+                            // written in and this will store value as Model S
+
+console.log( i10.name );    // this will print 'grand i10' in console,  so for each object values set for any class variable will be
+                            // different

@@ -12,7 +12,7 @@ class Student{
     displayStudnetInfo(){
 
         console.log(`Name: ${this.name} \nAge: ${this.age} \nphoneNo: ${this.phoneNo}`);
-}
+    }
 }
 
 // creating objects of above class
@@ -36,7 +36,6 @@ Student.mentorName = "Prrammod Dutta";
 
 console.log( Student.courseName );  // playwright2x_batch
 console.log( Student.mentorName );  // Prrammod Dutta
-
 
 // related to varibles which are non static: name, age, phoneNo
 // these values are only valid for their objects sucn as student1 will hold diff values and student2 will different

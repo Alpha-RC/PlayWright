@@ -22,10 +22,11 @@ class Credentials{
 
 // object creation:
 let cred = new Credentials("Admin" , "secret_key_1234");
-console.log(cred.user);  //--> here we cannot access private varibale, private varibale can only be used under a class
+console.log(cred.user);     //--> here we cannot access private varibale, private varibale can only be used under a class
 // output: Admin
 
 console.log(cred.apiKey);   // undefined
-// console.log(cred.#apiKey);  // SyntaxError: Private field '#apiKey' must be declared in an enclosing class
+// console.log(cred.#apiKey);   // SyntaxError: Private field '#apiKey' must be declared in an enclosing class
+                                // We cannot access private varibales outside of the class and also with class object ref variable
 
 console.log( cred.getAuthHeader() );    // Bearer secret_key_1234

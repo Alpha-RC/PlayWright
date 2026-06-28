@@ -3,6 +3,9 @@ class Person{
     // Attributes: Attribues of a class is nothing but its properties like persons name, age, nationality
 
     // these are nothing but the varibles which will hold the values which are basically referenced as attributes in real life terms
+    // in class we cant use const, let or var keywords to declare a varibale instead we have access modifiers
+
+    // below varibles are by default public varibles
     name;
     email;
     salary;
@@ -31,3 +34,15 @@ const Obj_ref =  new Person();  // here when we write 'new Person();', an object
 
 
 console.log(Obj_ref);
+/*
+output:
+
+Person {
+  name: undefined,
+  email: undefined,
+  salary: undefined,
+  address: undefined
+}
+
+as we have not initiliazed the values of varibales it will be undefined by default
+*/
