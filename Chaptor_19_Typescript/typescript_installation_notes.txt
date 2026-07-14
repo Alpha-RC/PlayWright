@@ -1,0 +1,35 @@
+1. To install typescript globally --> npm install -g typescript
+    we can also use "npm i -g typescript" as short version command
+
+2. To check typescript version    --> tsc -version or tsc -v
+
+3. In order to create a typescript project we need to run tsc --init
+    this will create a tsconfig.json file in your project directory where you ran tsc --init
+
+4. First we need to create a file with extension .ts in the project where we ran tsc -init which is for typescript
+
+5. we created 01_TS_HelloWorld.ts file 
+
+6. To run this from Terminal using tsc then we need to use command --> tsc path of file  --ignoreconfig
+    for e.g. if we are in our parent folder i.e. LEARNPLAYWRIGHTWITHAI then command will be 
+    tsc .\Chaptor_19_Typescript\01_TS_HelloWorld.ts --ignoreconfig
+
+7. Now when we run this command it will create a .js version of 01_TS_HelloWorld.ts in the same folder
+    This shows in backend .ts file is actually converted into .js file and nodejs backend engine will run .js file
+
+8. Now tsc actually creates 2 files after executing tsc filepath --ignoreconfig .ts and .js
+    workflow of this execution is like 
+        tsc 01_TS_HelloWorld.ts --ignoreconfig
+        node 01_TS_HelloWorld.js
+
+9. To avoid this workflow we have ts-node which will directly run the .ts file without creating .js version
+
+10. And if we try to .ts file using code runner extension then by default it will try to run it using ts-node which is a default command 
+    execute .ts file
+
+10. So we first need to install ts-node using command --> npm install -g ts-node
+
+11. To run the file we need to use command --> ts-node .\Chaptor_19_Typescript\01_TS_HelloWorld.ts -> this will run the file in one shot
+    and it will not create .js version
+
+12. Also code runner can now run the code directly using the run button cause we installed ts-node globally
