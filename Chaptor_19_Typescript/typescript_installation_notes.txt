@@ -10,7 +10,7 @@
 
 5. we created 01_TS_HelloWorld.ts file 
 
-6. To run this from Terminal using tsc then we need to use command --> tsc path of file  --ignoreconfig
+6. To run this from Terminal using tsc, then we need to use command --> tsc path of file  --ignoreconfig
     for e.g. if we are in our parent folder i.e. LEARNPLAYWRIGHTWITHAI then command will be 
     tsc .\Chaptor_19_Typescript\01_TS_HelloWorld.ts --ignoreconfig
 
@@ -33,3 +33,18 @@
     and it will not create .js version
 
 12. Also code runner can now run the code directly using the run button cause we installed ts-node globally
+
+note: 
+
+wehn we run file using tsc .\Chaptor_19_Typescript\01_TS_HelloWorld.ts --ignoreconfig 
+
+then internally it rans:
+tsc .\Chaptor_19_Typescript\01_TS_HelloWorld.ts
+node .\Chaptor_19_Typescript\01_TS_HelloWorld.js  --> this creates the file 
+
+now in order to not to get this .js file created under the folder we have ts-node which will basically contains
+typescripts tsc + node compilers
+
+so thats we we will use ts-node filepath
+
+and as ts-node is installed globally code runner can run .ts file

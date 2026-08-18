@@ -35,22 +35,22 @@ var myVariable = 10;
    RULE 1: Must start with letter, _, or $
    ======================================== */
 
-var validVar = "starts with letter";          // ✓ Valid
-var _privateVar = "starts with underscore";   // ✓ Valid
-var $jqueryStyle = "starts with dollar";      // ✓ Valid
+var validVar = "starts with letter";               // ✓ Valid
+var _privateVar = "starts with underscore";        // ✓ Valid
+var $jqueryStyle = "starts with dollar";           // ✓ Valid
 
-let validLet = "starts with letter";          // ✓ Valid
-let _privateLet = "starts with underscore";   // ✓ Valid
-let $dollarLet = "starts with dollar";        // ✓ Valid
+let validLet = "starts with letter";               // ✓ Valid
+let _privateLet = "starts with underscore";        // ✓ Valid
+let $dollarLet = "starts with dollar";             // ✓ Valid
 
-const VALID_CONST = "starts with letter";     // ✓ Valid
-const _PRIVATE_CONST = "starts with underscore"; // ✓ Valid
-const $JQUERY_CONST = "starts with dollar";   // ✓ Valid
+const VALID_CONST = "starts with letter";          // ✓ Valid
+const _PRIVATE_CONST = "starts with underscore";   // ✓ Valid
+const $JQUERY_CONST = "starts with dollar";        // ✓ Valid
 
 // Invalid - would cause syntax error if uncommented:
-// var 1invalid = "starts with digit";        // ✗ Invalid
-// let @email = "starts with @";              // ✗ Invalid
-// const #hashtag = "starts with #";          // ✗ Invalid
+// var 1invalid = "starts with digit";             // ✗ Invalid
+// let @email = "starts with @";                   // ✗ Invalid
+// const #hashtag = "starts with #";               // ✗ Invalid
 
 /* ========================================
    RULE 2: Can include digits after first character
@@ -66,20 +66,20 @@ const MAX_ATTEMPTS_5 = 5;               // ✓ Valid
 const SCORE100 = 100;                   // ✓ Valid
 
 // Invalid - starts with digit:
-// var 1stPlace = "illegal";              // ✗ Invalid
-// let 9lives = "illegal";                // ✗ Invalid
+// var 1stPlace = "illegal";            // ✗ Invalid
+// let 9lives = "illegal";              // ✗ Invalid
 
 /* ========================================
    RULE 3: Cannot be a reserved keyword
    ======================================== */
 
 // Valid identifiers that look like keywords but are not:
-var myIf = "not a reserved word";       // ✓ Valid
-var myFor = "not a reserved word";      // ✓ Valid
-var ifCondition = "camelCase version";  // ✓ Valid
+var myIf = "not a reserved word";         // ✓ Valid
+var myFor = "not a reserved word";        // ✓ Valid
+var ifCondition = "camelCase version";    // ✓ Valid
 
-let whileLoop = "valid identifier";     // ✓ Valid
-let switchValue = "valid identifier";   // ✓ Valid
+let whileLoop = "valid identifier";       // ✓ Valid
+let switchValue = "valid identifier";     // ✓ Valid
 
 const FUNCTION_NAME = "valid identifier"; // ✓ Valid
 

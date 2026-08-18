@@ -4,7 +4,7 @@ interface APIResponse{
     responseTime?:number;
 }
 
-// lets suppuse above interface where headers and responseTime can be an optional variables measn their value can be option in object
+// lets suppuse above interface where headers and responseTime can be an optional variables means their value can be optional in object
 
 // creating a variable of type APIResponse interface
 let response1:APIResponse = {

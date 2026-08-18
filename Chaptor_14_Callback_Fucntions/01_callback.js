@@ -27,7 +27,6 @@ your order is: Burger
 Order placed successfully
 */
 
-//-------------------------------------------------------------------------------------------------------------------------------
 
 // second way - insted of function name, we can send whole function directly like below:
 

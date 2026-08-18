@@ -17,7 +17,7 @@ for (let i = 0; i < 10000; i++)
     print();
 }
 
-// Above code is called as "Hot Code" as it is executing a lot of lines of code  in a loop, which is not good for performance.
+// Above code is called as "Hot Code" as it is executing a lot of lines of code in a loop, which is not good for performance.
 
 // Here javascript engine will optimize the code by using "Just In Time Compilation" (JIT)
 // which will compile the code at runtime and execute it, which will improve the performance of the code.

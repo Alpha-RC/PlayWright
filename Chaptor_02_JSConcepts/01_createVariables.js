@@ -7,7 +7,7 @@
 
 // The 'var' keyword is used to declare a variable in JavaScript.
 // It has function scope, which means that the variable declared with 'var' is accessible
-// within the function it is declared in, and also globally if declared outside of any function.
+// within the function/block it is declared
 
 var a = 10;
 // Here we have declared a variable 'a' and assigned it the value 10 using the 'var' keyword.
