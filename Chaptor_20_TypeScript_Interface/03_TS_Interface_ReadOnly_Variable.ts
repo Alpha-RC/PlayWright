@@ -26,5 +26,6 @@ console.log( "Headers: " , response.headers    );   //  Headers:  undefined  -->
 
 
 // response.statusCode = 400;  //--> we cannot change the value of statusCode as it is readonly and already inilized in response variable
+
 response.body = "{user:Admin , pass:Admin123}";     //--> Here we can change the value of body cause it is not readonly
 

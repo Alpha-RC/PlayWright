@@ -4,14 +4,20 @@ interface TestCase{
     name: string;
     status: string
     duration: number;
-   
+
 }
 
+// interface can give structures to the objects (this object is not the one which we create for classes 
+//                                            this is a objects varibale where we store value as in key: value format)
+
+
 // if we create a variable which holds objects of TestCase interface
-// then we need to create a variable of type TestCase which means variables data type will be of TestCase which is a interface
+// then we need to create a variable of type TestCase which means variables data type will be of TestCase which is a 
+// interface
 
 // in this type of variable we need to specify each and every variable which TestCase interface holds
 // if we do not mention a sigle variable then it will throw error
+
 let test1:TestCase = {
     id: 1,
     name: "Login with valid credentials",

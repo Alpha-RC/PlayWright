@@ -6,7 +6,7 @@ config.testName = "Login Test";
 
 console.log(config); // output: { browser: 'Chrome', timeout: 3000, testName: 'Login Test' }
 
-if(config.browser === "chrome"){
+if(config.browser === "Chrome"){
     console.log("Execute TC");
 }
 

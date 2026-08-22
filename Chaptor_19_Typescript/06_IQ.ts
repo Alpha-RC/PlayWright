@@ -1,7 +1,11 @@
 let responseCode:number[] = [200,201,404,500,302,403];
 
 function getFailedCodes(codes:number[]):number[]{
-    return codes.filter( (code:number):boolean=> code>=400 )
+    return codes.filter( (code:number):boolean => code>=400 )
+}
+
+function failedCodes( codes:number[]):number[]{
+    return codes.filter( (value:number):boolean=> value>=400 )
 }
 
 console.log("All codes: " , responseCode);                      //  All codes:  [ 200, 201, 404, 500, 302, 403 ]
