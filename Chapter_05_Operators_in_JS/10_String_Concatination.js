@@ -1,4 +1,4 @@
 let s = "Hi";
 s+= " Dev";
 
-console.log(s);
+console.log(s);  //--> Hi Dev

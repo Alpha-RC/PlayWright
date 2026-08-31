@@ -1,13 +1,15 @@
 //single quotes
 
-let str1 = 'twefgwegfyugf"euyfgef"eyfgeygf"';
+let str1 = 'twefgwegfyugf"euyfgef"eyfgeygf"';   // twefgwegfyugf"euyfgef"eyfgeygf"
 console.log(str1);
 
-let str2 = "eufgehjc,efegfehh"
+let str2 = "eufgehjc,efegfehh"                  // eufgehjc,efegfehh
 console.log(str2);
 
-let str = `geheuhf"
+let str = `geheuhf"                             
 eyfgeyf"wgdgwud"
-jhgfghjksl`;
+jhgfghjksl`;                                    
 
-console.log(str);
+console.log(str);                               // geheuhf" 
+                                                // eyfgeyf"wgdgwud" 
+                                                // jhgfghjksl

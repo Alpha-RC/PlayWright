@@ -1,4 +1,4 @@
-console.log(constant);
+console.log(constant);  // error will be thrown here: Cannot access 'constant' before initialization
 
 /*************************************************************
 

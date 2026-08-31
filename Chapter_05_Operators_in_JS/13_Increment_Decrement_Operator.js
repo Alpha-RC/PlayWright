@@ -29,10 +29,10 @@ console.log("\n");
 
 let c = 10;
 console.log(`Original value of variable c is: ${c}`);
-console.log(`Value of varibale c at post-increment: ${c++}`);  // output: 10
+console.log(`Value of varibale c at post-increment: ${c++}`);   // output: 10
 
 // now if we try to print the value of c then it will be increased value:
-console.log(`Value of variable after post-increment: ${c}`);
+console.log(`Value of variable after post-increment: ${c}`);    // output: 11
 
 //===========================================================================================================================
 

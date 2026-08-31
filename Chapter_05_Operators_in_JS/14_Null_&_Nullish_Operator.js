@@ -17,7 +17,7 @@ let amul = null;
 
 let milk = amul ?? "gokul milk";
 
-console.log(milk);
+console.log(milk);  // gokul milk
 
 //======================================================================================================
 
@@ -26,6 +26,6 @@ let Amul = "Amul milk is available";
 
 let Milk = Amul ?? "gokul milk";
 
-console.log(Milk);
+console.log(Milk);  // Amul milk is available
 
 //======================================================================================================

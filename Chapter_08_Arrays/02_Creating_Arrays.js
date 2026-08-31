@@ -43,7 +43,7 @@ console.log(test); // outpur: [ 10, 20, 30, 40, 50 ]
 
 // 4. using Array.from() method:
 
-let chars = Array.from("hello"); // this will device the string hello into characters like below
+let chars = Array.from("hello"); // this will devide the string hello into characters like below
 // [ 'h', 'e', 'l', 'l', 'o' ]
 
 console.log(chars); //output: [ 'h', 'e', 'l', 'l', 'o' ]
